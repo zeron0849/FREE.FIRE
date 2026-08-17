@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>FFX MARKET — Legendary Free Fire Collection</title>
+
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+    ⚡ FLASH SALE LIVE — UP TO 80% OFF SELECTED ITEMS — LIMITED TIME
+</div>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        FFX<span>MARKET</span>
+        <small>LEGENDARY COLLECTION</small>
+    </div>
+
+    <div class="nav-links">
+        <a href="#offers">OFFERS</a>
+        <a href="#guns">GUN SKINS</a>
+        <a href="#bundles">BUNDLES</a>
+        <a href="#rare">RARE</a>
+    </div>
+
+    <div class="nav-right">
+
+        <button class="search-btn" onclick="showToast('Search coming soon')">
+            ⌕
+        </button>
+
+        <button class="cart-btn" onclick="toggleCart()">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <button class="mobile-menu" onclick="showToast('Mobile menu')">
+            ☰
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+
+        <div class="live">
+            <i></i>
+            LIVE DROP
+        </div>
+
+        <h1>
+            OWN THE
+            <span>LEGEND</span>
+        </h1>
+
+        <p class="hero-description">
+            Explore an elite collection of weapon skins,
+            character bundles and rare cosmetic concepts.
+            Discover today's hottest deals and build your
+            ultimate vault.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#offers" class="btn btn-primary">
+                🔥 EXPLORE OFFERS
+            </a>
+
+            <a href="#rare" class="btn btn-dark">
+                VIEW RARE ITEMS →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+        <div class="ring"></div>
+
+        <img
+            class="weapon"
+            src="https://staticg.sportskeeda.com/editor/2021/10/f8cf9-16349626876095-1920.jpg"
+            alt="Free Fire weapon showcase"
+        >
+
+        <div class="weapon-label">
+
+            <small>FEATURED WEAPON</small>
+
+            <strong>DRAGON ARSENAL</strong>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- STATS -->
+
+<div class="stats">
+
+    <div class="stat">
+        <strong>120+</strong>
+        <span>Weapon Skins</span>
+    </div>
+
+    <div class="stat">
+        <strong>48+</strong>
+        <span>Rare Items</span>
+    </div>
+
+    <div class="stat">
+        <strong>35+</strong>
+        <span>Premium Bundles</span>
+    </div>
+
+    <div class="stat">
+        <strong>80%</strong>
+        <span>Max Discount</span>
+    </div>
+
+</div>
+
+
+<!-- OFFERS -->
+
+<section id="offers">
+
+    <div class="section-header">
+
+        <div>
+            <div class="section-title">
+                HOT DROPS
+            </div>
+
+            <div class="section-sub">
+                The most wanted items in the vault.
+            </div>
+        </div>
+
+        <a href="#" class="view-all">
+            VIEW ALL →
+        </a>
+
+    </div>
+
+
+    <div class="filters">
+
+        <button
+            class="filter active"
+            onclick="filterProducts('all',this)">
+            ALL
+        </button>
+
+        <button
+            class="filter"
+            onclick="filterProducts('gun',this)">
+            GUN SKINS
+        </button>
+
+        <button
+            class="filter"
+            onclick="filterProducts('bundle',this)">
+            BUNDLES
+        </button>
+
+        <button
+            class="filter"
+            onclick="filterProducts('legendary',this)">
+            LEGENDARY
+        </button>
+
+        <button
+            class="filter"
+            onclick="filterProducts('rare',this)">
+            RARE
+        </button>
+
+    </div>
+
+
+    <div class="product-grid" id="productGrid">
+
+        <!-- PRODUCT -->
+
+        <article
+            class="product gun legendary"
+            data-name="Blue Flame Draco">
+
+            <div class="product-image">
+
+                <span class="sale">-70%</span>
+
+                <span class="rarity legendary">
+                    LEGENDARY
+                </span>
+
+                <img
+                    src="https://staticg.sportskeeda.com/editor/2021/10/f8cf9-16349626876095-1920.jpg"
+                    alt="Blue Flame Draco"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    EVO WEAPON
+                </div>
+
+                <div class="product-name">
+                    Blue Flame Draco
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+                        <div class="old-price">
+                            999 💎
+                        </div>
+
+                        <div class="price">
+                            299 <span>💎</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Blue Flame Draco',
+                        '299 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product gun rare"
+            data-name="Ice Dragon AK">
+
+            <div class="product-image">
+
+                <span class="sale">-60%</span>
+
+                <span class="rarity rare">
+                    RARE
+                </span>
+
+                <img
+                    src="https://staticg.sportskeeda.com/editor/2021/10/f8cf9-16349626876095-1920.jpg"
+                    alt="Ice Dragon AK"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    WEAPON SKIN
+                </div>
+
+                <div class="product-name">
+                    Ice Dragon AK
+                </div>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            750 💎
+                        </div>
+
+                        <div class="price">
+                            299 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Ice Dragon AK',
+                        '299 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product bundle epic"
+            data-name="Arctic Assassin">
+
+            <div class="product-image">
+
+                <span class="sale">-55%</span>
+
+                <span class="rarity epic">
+                    EPIC
+                </span>
+
+                <img
+                    src="https://pbs.twimg.com/media/EYNs4o4UwAAWtYS.jpg"
+                    alt="Arctic Assassin Bundle"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    PREMIUM BUNDLE
+                </div>
+
+                <div class="product-name">
+                    Arctic Assassin
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            899 💎
+                        </div>
+
+                        <div class="price">
+                            449 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Arctic Assassin',
+                        '449 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product bundle legendary"
+            data-name="Crimson Elite">
+
+            <div class="product-image">
+
+                <span class="sale">-65%</span>
+
+                <span class="rarity legendary">
+                    MYTHIC
+                </span>
+
+                <img
+                    src="https://www.digitalcsc.in/wp-content/uploads/2020/12/K-Character-in-Free-Fire.jpg"
+                    alt="Crimson Elite"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    COLLECTOR BUNDLE
+                </div>
+
+                <div class="product-name">
+                    Crimson Elite
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            1100 💎
+                        </div>
+
+                        <div class="price">
+                            399 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Crimson Elite',
+                        '399 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product gun legendary"
+            data-name="Dragon Rage">
+
+            <div class="product-image">
+
+                <span class="sale">-75%</span>
+
+                <span class="rarity legendary">
+                    LEGENDARY
+                </span>
+
+                <img
+                    src="https://staticg.sportskeeda.com/editor/2021/10/f8cf9-16349626876095-1920.jpg"
+                    alt="Dragon Rage"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    EVO WEAPON
+                </div>
+
+                <div class="product-name">
+                    Dragon Rage
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            1200 💎
+                        </div>
+
+                        <div class="price">
+                            399 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Dragon Rage',
+                        '399 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product bundle rare"
+            data-name="Shadow King">
+
+            <div class="product-image">
+
+                <span class="sale">-80%</span>
+
+                <span class="rarity rare">
+                    LIMITED
+                </span>
+
+                <img
+                    src="https://www.digitalcsc.in/wp-content/uploads/2020/12/K-Character-in-Free-Fire.jpg"
+                    alt="Shadow King"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    LIMITED DROP
+                </div>
+
+                <div class="product-name">
+                    Shadow King
+                </div>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            1400 💎
+                        </div>
+
+                        <div class="price">
+                            299 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Shadow King',
+                        '299 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product gun rare"
+            data-name="Cyber Vector">
+
+            <div class="product-image">
+
+                <span class="sale">-45%</span>
+
+                <span class="rarity rare">
+                    RARE
+                </span>
+
+                <img
+                    src="https://staticg.sportskeeda.com/editor/2021/10/f8cf9-16349626876095-1920.jpg"
+                    alt="Cyber Vector"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    WEAPON SKIN
+                </div>
+
+                <div class="product-name">
+                    Cyber Vector
+                </div>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            600 💎
+                        </div>
+
+                        <div class="price">
+                            329 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Cyber Vector',
+                        '329 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product bundle epic"
+            data-name="Red Phantom">
+
+            <div class="product-image">
+
+                <span class="sale">-50%</span>
+
+                <span class="rarity epic">
+                    EPIC
+                </span>
+
+                <img
+                    src="https://www.digitalcsc.in/wp-content/uploads/2020/12/K-Character-in-Free-Fire.jpg"
+                    alt="Red Phantom"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    PREMIUM SET
+                </div>
+
+                <div class="product-name">
+                    Red Phantom
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="old-price">
+                            850 💎
+                        </div>
+
+                        <div class="price">
+                            425 <span>💎</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Red Phantom',
+                        '425 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- FLASH SALE -->
+
+<div class="flash">
+
+    <div>
+
+        <h2>
+            ⚡ FLASH VAULT SALE
+        </h2>
+
+        <p>
+            Next drop expires soon. Don't miss the featured collection.
+        </p>
+
+    </div>
+
+    <div class="timer">
+
+        <div class="time">
+            <strong id="days">02</strong>
+            <small>Days</small>
+        </div>
+
+        <div class="time">
+            <strong id="hours">18</strong>
+            <small>Hours</small>
+        </div>
+
+        <div class="time">
+            <strong id="minutes">42</strong>
+            <small>Minutes</small>
+        </div>
+
+        <div class="time">
+            <strong id="seconds">10</strong>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- FEATURED BANNER -->
+
+<section id="rare">
+
+    <div class="section-header">
+
+        <div>
+
+            <div class="section-title">
+                THE RARE VAULT
+            </div>
+
+            <div class="section-sub">
+                For collectors who want something different.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="banner">
+
+        <div class="banner-content">
+
+            <div class="banner-tag">
+                LIMITED COLLECTION
+            </div>
+
+            <h2>
+                DRAGON<br>
+                ARSENAL
+            </h2>
+
+            <p>
+                A premium showcase section for your rarest
+                weapon skins and collector drops.
+            </p>
+
+            <a href="#offers"
+               class="btn btn-primary"
+               style="margin-top:20px">
+                EXPLORE COLLECTION →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BUNDLES -->
+
+<section id="bundles">
+
+    <div class="section-header">
+
+        <div>
+
+            <div class="section-title">
+                PREMIUM BUNDLES
+            </div>
+
+            <div class="section-sub">
+                Complete looks. Maximum style.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="product-grid">
+
+        <article class="product bundle">
+
+            <div class="product-image">
+
+                <span class="sale">-55%</span>
+
+                <span class="rarity epic">
+                    EPIC
+                </span>
+
+                <img
+                    src="https://pbs.twimg.com/media/EYNs4o4UwAAWtYS.jpg"
+                    alt="Arctic Assassin"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    CHARACTER BUNDLE
+                </div>
+
+                <div class="product-name">
+                    Arctic Assassin
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+                        <div class="old-price">899 💎</div>
+                        <div class="price">
+                            449 <span>💎</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Arctic Assassin',
+                        '449 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="product bundle">
+
+            <div class="product-image">
+
+                <span class="sale">-60%</span>
+
+                <span class="rarity legendary">
+                    MYTHIC
+                </span>
+
+                <img
+                    src="https://www.digitalcsc.in/wp-content/uploads/2020/12/K-Character-in-Free-Fire.jpg"
+                    alt="Crimson Elite"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    COLLECTOR
+                </div>
+
+                <div class="product-name">
+                    Crimson Elite
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+                        <div class="old-price">999 💎</div>
+                        <div class="price">
+                            399 <span>💎</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Crimson Elite',
+                        '399 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="product bundle rare">
+
+            <div class="product-image">
+
+                <span class="sale">-70%</span>
+
+                <span class="rarity rare">
+                    LIMITED
+                </span>
+
+                <img
+                    src="https://www.digitalcsc.in/wp-content/uploads/2020/12/K-Character-in-Free-Fire.jpg"
+                    alt="Shadow King"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    LIMITED DROP
+                </div>
+
+                <div class="product-name">
+                    Shadow King
+                </div>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+                        <div class="old-price">1200 💎</div>
+                        <div class="price">
+                            349 <span>💎</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Shadow King',
+                        '349 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="product bundle epic">
+
+            <div class="product-image">
+
+                <span class="sale">-45%</span>
+
+                <span class="rarity epic">
+                    EPIC
+                </span>
+
+                <img
+                    src="https://pbs.twimg.com/media/EYNs4o4UwAAWtYS.jpg"
+                    alt="Frost Reaper"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <div class="product-type">
+                    PREMIUM SET
+                </div>
+
+                <div class="product-name">
+                    Frost Reaper
+                </div>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <div>
+                        <div class="old-price">799 💎</div>
+                        <div class="price">
+                            439 <span>💎</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="add"
+                        onclick="addToCart(
+                        'Frost Reaper',
+                        '439 💎',
+                        this.closest('.product')
+                        )">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div>
+        © 2026 <b>FFX MARKET</b>
+    </div>
+
+    <div>
+        Fan-made / demo marketplace · Not affiliated with Garena
+    </div>
+
+</footer>
+
+
+<!-- CART DRAWER -->
+
+<aside class="drawer" id="drawer">
+
+    <div class="drawer-header">
+
+        <h3>
+            YOUR VAULT
+        </h3>
+
+        <button
+            class="close-cart"
+            onclick="toggleCart()">
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="cart-items"
+        id="cartItems">
+
+        <div class="empty">
+            Your vault is empty.<br>
+            Add something legendary.
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- TOAST -->
+
+<div
+    class="toast"
+    id="toast">
+</div>
+
+
+<script>
+
+/* =========================================
+   FILTER
+========================================= */
+
+function filterProducts(category,button){
+
+    document
+        .querySelectorAll(".filter")
+        .forEach(el=>{
+            el.classList.remove("active");
+        });
+
+    button.classList.add("active");
+
+    document
+        .querySelectorAll("#productGrid .product")
+        .forEach(product=>{
+
+            if(category==="all"){
+                product.style.display="";
+                return;
+            }
+
+            product.style.display =
+                product.classList.contains(category)
+                ? ""
+                : "none";
+
+        });
+
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+let cart=[];
+
+function addToCart(name,price,product){
+
+    const image =
+        product.querySelector("img").src;
+
+    cart.push({
+        name,
+        price,
+        image
+    });
+
+    document.getElementById("cartCount")
+        .innerText=cart.length;
+
+    renderCart();
+
+    showToast(
+        "🔥 " + name + " added to your vault"
+    );
+
+}
+
+
+function renderCart(){
+
+    const container =
+        document.getElementById("cartItems");
+
+    if(cart.length===0){
+
+        container.innerHTML=`
+            <div class="empty">
+                Your vault is empty.<br>
+                Add something legendary.
+            </div>
+        `;
+
+        return;
+    }
+
+    container.innerHTML="";
+
+    cart.forEach(item=>{
+
+        const div=
+            document.createElement("div");
+
+        div.className="cart-item";
+
+        div.innerHTML=`
+
+            <img
+                src="${item.image}"
+                alt="${item.name}"
+            >
+
+            <div>
+                <strong>${item.name}</strong>
+                <span>${item.price}</span>
+            </div>
+
+        `;
+
+        container.appendChild(div);
+
+    });
+
+}
+
+
+function toggleCart(){
+
+    document
+        .getElementById("drawer")
+        .classList.toggle("open");
+
+}
+
+
+/* =========================================
+   TOAST
+========================================= */
+
+let toastTimer;
+
+function showToast(message){
+
+    const toast=
+        document.getElementById("toast");
+
+    toast.innerText=message;
+
+    toast.classList.add("show");
+
+    clearTimeout(toastTimer);
+
+    toastTimer=setTimeout(()=>{
+
+        toast.classList.remove("show");
+
+    },2500);
+
+}
+
+
+/* =========================================
+   COUNTDOWN
+========================================= */
+
+let saleEnd=
+    Date.now()+
+    (
+        2*24*60*60*1000+
+        18*60*60*1000+
+        42*60*1000
+    );
+
+
+function updateTimer(){
+
+    let distance=
+        saleEnd-Date.now();
+
+    if(distance<=0){
+
+        saleEnd=
+            Date.now()+
+            24*60*60*1000;
+
+        distance=
+            saleEnd-Date.now();
+
+    }
+
+    const days=
+        Math.floor(
+            distance/
+            (1000*60*60*24)
+        );
+
+    const hours=
+        Math.floor(
+            distance%
+            (1000*60*60*24)/
+            (1000*60*60)
+        );
+
+    const minutes=
+        Math.floor(
+            distance%
+            (1000*60*60)/
+            (1000*60)
+        );
+
+    const seconds=
+        Math.floor(
+            distance%
+            (1000*60)/
+            1000
+        );
+
+
+    document.getElementById("days")
+        .innerText=
+        String(days).padStart(2,"0");
+
+    document.getElementById("hours")
+        .innerText=
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes")
+        .innerText=
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds")
+        .innerText=
+        String(seconds).padStart(2,"0");
+
+}
+
+setInterval(updateTimer,1000);
+
+updateTimer();
+
+</script>
+
+</body>
+</html>

